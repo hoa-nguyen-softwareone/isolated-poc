@@ -17,7 +17,7 @@ async function run() {
 
   let script = await isolate.compileScript(`
         async function crawl() {
-            let data = await fetchUrl.deref()("https://example.com");
+            let data = await fetchUrl.deref()("https://dummyjson.com/test");
             return data.slice(0, 100); // Just for testing
         }
         crawl();
